@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-container">
+    <div class="form-card">
+        <h1>LOGIN</h1>
+
+        {% if error %}
+            <p class="error-message">{{ error }}</p>
+        {% endif %}
+
+        <form method="POST" action="{% url 'loginuser' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .form-card {
+        background: #1c1c1c;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        border: 2px solid red;
+    }
+
+    .form-card h1 {
+        margin-bottom: 1.5rem;
+        color: red;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #333;
+        background-color: #333;
+        color: white;
+        border-radius: 5px;
+    }
+
+    form input:focus {
+        border-color: red;
+        outline: none;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: darkred;
+    }
+
+    .error-message {
+        color: red;
+        margin-bottom: 10px;
+    }
+</style>
+{% endblock %}

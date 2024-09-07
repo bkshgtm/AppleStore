@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+<!doctype html>
+<head>
+    <title>Apple</title>
+</head>
+<body>
+{% block content %}
+<link rel="stylesheet" href="{% static 'landpage/homestyle.css' %}">
+<img src="{% static 'macbook.jpg' %}" width="1500">
+<img src="{% static 'ipad.jpeg' %}" width="1500">
+<div class='button text-center'>
+    <a href='{% url 'products:products' %}'>
+    <button class='buy-btn'>BUY</button>
+    </a>
+</div>
+<h1 class="product-heading text-center">OUR PRODUCTS</h1>
+<div class="lined-products">
+{% for product in products %}
+<ul class="list">
+    <div class='item-box'>
+<li><h4 class="title">{{product.name}}</h4></li>
+<a href='{% url 'products:buyitem' product.id %}'><img class='image-data' src="{{ product.image.url}}" height='100'></a>
+<li><p class="description">{{product.description|safe}}</p></li>
+    </div>
+</ul>
+{% endfor %}
+{% endblock %}
+</div>
+</body>
+</html>

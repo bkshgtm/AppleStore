@@ -1,0 +1,6 @@
+asgiref==3.8.1
+Django==5.1.1
+django-multiselectfield==0.1.13
+pillow==10.4.0
+python-decouple==3.8
+sqlparse==0.5.1

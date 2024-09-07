@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* General Styles */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.product-heading {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Container Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/* Card Styles */
+.product-card {
+    background-color: #111;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Image Styles */
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Info Styles */
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Button Styles */
+.buy-link {
+    text-decoration: none;
+}
+
+.buy-btn {
+    background-color: #e63946;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #d62839;
+    transform: scale(1.05);
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'products/productstyle.css' %}">
+<h1 class="product-heading text-center">BUY PRODUCTS</h1>
+<div class="lined-products">
+{% for product in products %}
+<div class="item-box">
+    <h4 class="title">{{ product.title }}</h4>
+    <a href="#">
+        <img src="{{ product.image.url }}" alt="{{ product.title }}" class="product-image">
+    </a>
+    <p class="description">{{ product.description|safe }}</p>
+    <a href='{% url 'products:buyitem' product.id %}'><button class="buy-btn">BUY</button></a>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

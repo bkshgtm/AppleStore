@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-color: black;
+}
+
+
+
+    .selector {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color:white;
+  }
+  
+    .selector select {
+        letter-spacing: 1px;
+        font-size: 20px;
+    color:wheat;
+    display: block;
+    width: 250px;
+    min-height: 35px;
+    background: #171717;
+    border-radius: 3px;
+    border: 3px solid wheat;
+    outline: none;
+    padding: 0 20px 0 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+  }
+  
+    .selector::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #222;
+    display: inline-block;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  .selector .selector-options {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    background: red;
+    color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    width: 96%;
+    position: absolute;
+    left: 2%;
+    top: 35%;
+  }
+  
+  .selector .selector-options li {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .selector .selector-options li:hover {
+    background: gray;
+  }
+
+
+
+  .color-div {
+      padding-top: 30px;
+  }
+
+  .confirm-btn {
+      height: 35px;
+      width: 100px;
+      border-radius: 13px;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+  }

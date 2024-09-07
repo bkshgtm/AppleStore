@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'buypage/choosepage.css' %}">
+<h1>{{error}}</h1>
+<h1 class='name text-center'>{{order.title}}</h1><br>
+<div class='text-center'>
+<img class='image' src="{{ order.image.url}}" height='800'>
+</div>
+
+<div class='color-select text-center'>
+<form name='orderform' method='POST' action='{% url 'confirmed' order.id %}'>
+    {% csrf_token %}
+    <div class='color-div'>
+    <label class='selector'>
+        <h5>select a color :</h3>
+    <select class='color-options' name='color'>
+        {% for color in color_list %}
+            <option value='{{color}}'>
+                {{color}}
+            </option>
+            {% endfor %}
+    </select>
+    </label>
+    </div>
+<br>
+<div class='storage-div'>
+    <label class='selector'>
+        <h5>select a storage :</h5>
+    <select class='storage-options' name="storage">
+        {% for storage in storage_list %}
+            <option value={{storage}}>
+                {{storage}}
+            </option>
+            {% endfor %}
+    </select>
+    </label>
+    </div>
+    <br>
+<button class='confirm-btn' type="submit">CONFIRM</button>
+</form>
+</div>
+
+
+{% endblock %}

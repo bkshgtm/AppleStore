@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'buypage/finish.css' %}">
+
+<div class='wrapper text-center'>
+    <label>
+        <h1 class='text-1'>YOUR ORDER</h1><br>
+            <h1 class='text-0'>
+                <a href='{% url 'products:buyitem' main_order.id %}'>
+                <label id='name'>{{main_order.name}}
+            
+                {{order.color}}
+                {{order.storage}}</label>
+                </a>
+            </h1>
+
+
+        <h1 class='text-2'>
+            HAS BEEN PLACED .
+        </h1>
+
+        <br>
+        <div class='btns'>
+            <ul class='btn-list'>
+                <li><a href='{% url "home" %}'><button class='btn'>HOME</button></a></li>
+                <li><a href='{% url "products:buypage" %}'><button class='btn'>BUY MORE</button></a></li>
+                <li><a href='{% url "vieworders" %}'><button class='btn'>MY ORDERS</button></a></li>
+            </ul>
+        </div>
+    </label>
+</div>
+
+{% endblock %}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Ensure this rule does not affect the navigation bar */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Style for content area only */
+.content-area {
+    flex: 1; /* Allow this section to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-heading {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    color: wheat;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensure heading spans full width */
+}
+
+.lined-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px; /* Add padding to avoid content touching edges */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.item-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #171717;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.title {
+    color: wheat;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 80%; /* Adjusted size */
+    max-width: 400px; /* Maximum width of image */
+    height: auto;
+    display: block;
+}
+
+.description {
+    font-weight: bold;
+    color: white !important; /* Ensure the color is applied */
+    text-align: center;
+    margin: 15px 0;
+}
+
+.buy-btn {
+    border-radius: 50px;
+    color: wheat;
+    background-color: #171717;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid wheat;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.buy-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    transition: transform 0.4s ease;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.buy-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.buy-btn:hover {
+    background-color: red;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.buy-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .product-heading {
+        font-size: 40px;
+    }
+
+    .item-box {
+        width: 90%;
+    }
+
+    .product-image {
+        width: 100%; /* Adjusted size for smaller screens */
+    }
+}

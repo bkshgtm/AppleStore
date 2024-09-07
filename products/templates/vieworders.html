@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<div class='main-div'>
+<link rel="stylesheet" href="{% static 'products/vieworders.css' %}">
+
+
+	<title>List item with hover effect</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+</head>
+<body>
+	<div class="box">
+		<div class="box-header">
+			<h1>
+				YOUR ORDERS :
+            </h1>
+        {% if allorders %}
+		</div>
+		<ul class="list">
+            {% for order in allorders %}
+			<a class='ordered-item' href='{% url 'orderdetails' order.id%}'>
+			<li class="item">
+				<i class="left-icon far fa-circle"></i>
+				<div class='item-div'>
+					{{order.item}}
+				</div>
+				<i class="right-icon far fa-trash-alt"></i>
+			</li>
+			</a>
+            {% endfor %}
+		</ul>
+	</div>
+    {% else %}
+    <div class='error-div'>
+    <h1>sorry, you don't have any orders</h1>
+    </div>
+    <a class='buy-btn' href='{% url "products:buypage" %}'><button class='btn'>BUY</button></a>
+        
+    {% endif %}
+</body>
+</div>
+</html>
+{% endblock %}

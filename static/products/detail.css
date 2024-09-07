@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Source+Sans+Pro:wght@700;900&display=swap');
+
+
+.main-div {
+	
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+}
+
+
+body{
+    background-color: black;
+}
+
+.box {
+    height: 600px;
+    font-size: 20px;
+	width: 900px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	/* box-shadow: 0 14px 28px rgba(0,0,0,0.25), */
+							/* 0 10px 10px rgba(0,0,0,0.22); */
+}
+
+.box-header {
+	padding: 10px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--box-header-bg);
+	color: white;
+}
+
+.list {
+	position: relative;
+	padding: unset;
+	margin: 0;
+	width: 100%;	
+}
+
+.item {
+    color:white;
+    border: 3px solid wheat;
+	list-style: none;
+	padding: 15px 40px;
+	position: relative;
+	background: black;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+
+
+
+.right-icon {
+	position: absolute;
+	right: 13px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.left-icon {
+	position: absolute;
+	left: 13px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.ordered-item {
+    text-decoration: none;
+    color:wheat;
+}
+
+.cancel-div {
+    border-radius: 20px;
+    width:230px;
+    color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 4px solid yellow;
+    height: 75px;
+    position: absolute;
+    top:400px;
+    bottom:0;
+    right:0;
+    left: 0;
+    margin:auto;
+
+}
+
+.cancel-btn {
+    color:white;
+    background-color: red;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height: 50px;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left: 0;
+    margin:auto;
+
+}
+
+.btn {
+    font-size: 25px;
+    color:wheat;
+}
+
+.btn:hover {
+    color:yellow;
+}
+

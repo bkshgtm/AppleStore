@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', cursive;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.product-heading {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5vw; /* Responsive font size */
+    color: wheat;
+    padding: 5vw;
+    text-align: center;
+}
+
+.product {
+    color: white;
+}
+
+.list {
+    font-family: 'Arial', cursive;
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lined-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 0;
+    margin: 0 auto; /* Center the container */
+}
+
+.item-box {
+    padding: 2vw;
+    width: 100%;
+    max-width: 500px; /* Adjust max-width for better responsiveness */
+    text-align: center;
+    margin-bottom: 20px; /* Space between items */
+}
+
+.title {
+    color: wheat;
+    font-weight: bold;
+}
+
+.description {
+    padding-top: 1vw;
+}
+
+.buy-btn {
+    text-align: center;
+    font-size: 1.5vw; /* Responsive font size */
+    width: 50%;
+    max-width: 200px; /* Adjust max-width for better responsiveness */
+    height: 50px;
+    font-family: 'Bebas Neue', cursive;
+    border-radius: 50px;
+    background-color: wheat;
+    margin: 20px auto; /* Center the button */
+    display: block;
+}
+
+.buy-btn:hover {
+    background-color: white;
+}
+
+.image-container {
+    text-align: center; /* Center images horizontally */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px; /* Adjust max-width for better responsiveness */
+}
+
+.macbook-image, .ipad-image {
+    width: 80%; /* Adjust width to a smaller percentage */
+    height: auto;
+    max-width: 800px; /* Set a max-width to limit size */
+    margin: 0 auto;
+}

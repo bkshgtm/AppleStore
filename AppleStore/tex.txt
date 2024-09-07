@@ -1,0 +1,29 @@
+def createorder(request, product_id):
+
+    main_order = get_object_or_404(Product, pk=product_id)
+    col_list = []
+    for x in main_order.color_options:
+        col_list.append(x)
+
+    stor_list = []
+    for y in main_order.storage_options:
+        stor_list.append(y)
+
+
+    if User is None :
+        return render(request, 'createorder.html', {'order':main_order, 'color_list':col_list, 'storage_list':stor_list, 'error':'TRY AGAIN'})
+            
+    else:
+        if request.method=='GET':
+            return render(request, 'createorder.html', {'order':main_order, 'color_list':col_list, 'storage_list':stor_list})
+                
+
+        else:
+            item = get_object_or_404(Product, pk=product_id)
+            color = request.POST['color']
+            storage = request.POST['storage']
+            user = request.user
+            date = timezone.now()
+            neworder = Order(item=item, color=color, storage=storage, user=user,order_date=date)
+            neworder.save()
+            return render(request, 'confirmorder.html', {'order':main_order})
