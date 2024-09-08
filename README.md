@@ -1,6 +1,6 @@
-# Apple 2.0
+# AppleStore
 
-Welcome to the Apple 2.0 project! This Django-based web application showcases Apple products, allowing users to view and purchase them.
+Welcome to the AppleStore project! This Django-based web application showcases Apple products, allowing users to view and purchase them.
 
 ## Table of Contents
 
@@ -12,6 +12,7 @@ Welcome to the Apple 2.0 project! This Django-based web application showcases Ap
 6. [Testing](#testing)
 7. [Contributing](#contributing)
 8. [License](#license)
+9. [Acknowledgements](#acknowledgements)
 
 ## Project Overview
 
@@ -24,16 +25,28 @@ To get started with the Apple 2.0 project, follow these steps:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/your-username/apple-2.0.git
-    cd apple-2.0
+    git clone https://github.com/bkshgtm/AppleStore.git
+    cd AppleStore
     ```
 
 2. **Set up a virtual environment**:
+   
+    ### macOS and Linux
 
     ```bash
     python3 -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    source venv/bin/activate
     ```
+
+    ### Windows
+
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
+    
+    
 
 3. **Install the dependencies**:
 
@@ -151,3 +164,47 @@ Run tests using Django's testing framework:
 
 ```bash
 python manage.py test
+```
+
+## Contributing
+
+We welcome any contributions to the Apple 2.0 project! To contribute:
+
+1. **Fork the repo** on GitHub.
+2. **Clone** your forked repo to your local machine.
+3. **Create a new branch** for your changes.
+4. **Make your changes** and commit them.
+5. **Push** your changes to your fork.
+6. **Open a pull request** on GitHub.
+
+Thank you for your contributions!
+
+---
+
+## License
+
+The Apple 2.0 project is licensed under the MIT License.
+
+---
+
+MIT License
+
+Copyright (c) [2024] [Bikash Gautam]
+
+Permission is granted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, with the same conditions mentioned above. The software is provided "as is", without any warranty of any kind.
+
+---
+
+## Acknowledgements
+
+The Apple 2.0 project uses the following technologies:
+
+- **Python**: For the programming language.
+- **Django**: For the web framework.
+- **HTML**: For structuring the web pages.
+- **CSS**: For styling the web pages.
+- **JavaScript**: For interactive elements.
+- **Bootstrap**: For UI components and styling.
+
+
+
