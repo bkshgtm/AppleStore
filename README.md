@@ -206,5 +206,20 @@ The Apple 2.0 project uses the following technologies:
 - **JavaScript**: For interactive elements.
 - **Bootstrap**: For UI components and styling.
 
+## Screenshots
+![landpage](https://github.com/user-attachments/assets/c541294b-9347-4e29-bf90-e2041624ad0b)
+![signuppage](https://github.com/user-attachments/assets/94f5e59a-d282-4613-80f4-d88ed48964c3)
+![loginpage](https://github.com/user-attachments/assets/dba337cc-11d3-4bc3-83fc-e5507008bfae)
+![ipad](https://github.com/user-attachments/assets/eb3a1858-e8a3-42a8-9a18-39e045c9b115)
+![products](https://github.com/user-attachments/assets/9693c2b3-6707-4114-abc4-df0b161a0fc5)
+![buypage](https://github.com/user-attachments/assets/ee091b72-4504-46ff-8ef8-84652f59eb31)
+![createorder](https://github.com/user-attachments/assets/ddead817-310d-4159-bf17-0ecb6bb8a407)
+![specselect](https://github.com/user-attachments/assets/7b58dd70-34d3-4379-8e09-dfa4f98ca216)
+![ordercomplete](https://github.com/user-attachments/assets/af8e5d9e-c9cf-409e-9e48-1076ddbad20e)
+![orders](https://github.com/user-attachments/assets/c9e42222-fcf4-45c5-a3f7-c09f986c25b5)
+![orderdetails](https://github.com/user-attachments/assets/07dbf1de-04d6-4206-b818-6e04f5348b64)
+![ordercancellation](https://github.com/user-attachments/assets/97d967ec-e136-4c9f-9a82-da6528ee11b4)
+
+
 
 
