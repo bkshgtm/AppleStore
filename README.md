@@ -18,7 +18,7 @@ Welcome to the AppleStore project! This Django-based web application showcases A
 
 ## Project Overview
 
-The Apple 2.0 project is a Django web application that provides a platform for users to browse and buy Apple products. It includes features such as product listing, order creation, and user authentication.
+The Apple 2.0 project is a simplified Python-Django-based clone of the Apple website. It provides a streamlined platform for users to browse and purchase Apple products, featuring essential functionalities such as user authentication, product listing, selecting product specifications, placing orders, viewing orders, and deleting orders. Additionally, new products with details can be directly added through the built-in admin page, and the webpage automatically updates to reflect these changes.
 
 ## Installation
 
