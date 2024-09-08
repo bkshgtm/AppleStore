@@ -13,6 +13,8 @@ Welcome to the AppleStore project! This Django-based web application showcases A
 7. [Contributing](#contributing)
 8. [License](#license)
 9. [Acknowledgements](#acknowledgements)
+10. [ScreenShots](#screenshots)
+    
 
 ## Project Overview
 
